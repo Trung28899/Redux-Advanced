@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 
 import counterReducer from "./store/reducers/counter";
 import resultReducer from "./store/reducers/result";
@@ -28,7 +28,14 @@ const logger = (store) => {
   };
 };
 
-const store = createStore(rootReducer, applyMiddleware(logger));
+// variable to set up redux dev tools
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+// create store for redux, init middleware and redux dev tools
+const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(logger))
+);
 
 ReactDOM.render(
   <Provider store={store}>

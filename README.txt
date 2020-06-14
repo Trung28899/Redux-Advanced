@@ -9,7 +9,8 @@ will be applied whenever any action is dispatched
 
 3. Guide of how to use: 
 
-VER 1: Middleware setting up
+VER 1: Middleware and redux dev tool setting up
 -------------------------------------------------------------
-Code in 2nd commit 
-- See index.js to see how to setup Middleware
+Code in 3rd commit 
+- See index.js to see how to setup Middleware and redux dev tool 
+> see exactly how to set it up in index.js
