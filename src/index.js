@@ -9,6 +9,8 @@ import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 
+import thunk from "redux-thunk";
+
 const rootReducer = combineReducers({
   ctr: counterReducer,
   res: resultReducer,
@@ -34,7 +36,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // create store for redux, init middleware and redux dev tools
 const store = createStore(
   rootReducer,
-  composeEnhancers(applyMiddleware(logger))
+  composeEnhancers(applyMiddleware(logger, thunk))
 );
 
 ReactDOM.render(

@@ -3,6 +3,11 @@
 +, link: https://github.com/zalmoxisus/redux-devtools-extension
 +, installed in google chrome
 
+- Redux thunk: 
++, $ npm install --save redux-thunk
++, https://github.com/reduxjs/redux-thunk
+
+
 - In case not able to run npm start: 
 $ rm -r node_modules
 $ npm install
@@ -11,8 +16,12 @@ $ npm install
 - Middleware: is used to support debugging. Middleware
 will be applied whenever any action is dispatched 
 
-- Action creators is the tool used to work with asynchronous
+- Action creators: is the tool used to work with asynchronous
 code with redux
+
+- Redux thunk: a third party library that let action creators not
+return an action itself but return a function that will
+dispatch the action
 
 3. Guide of how to use: 
 
@@ -32,3 +41,10 @@ functions are exported
 Step 2: Go to containers/Counter/Counter.js to see 
 how actionCreators is imported and used
 
+VER 3: Handling Async code with redux
+-------------------------------------------------------------
+Code in 5th commit 
+
+Step 1: install redux thunk, see reference above
+Step 2: See how to handle async code in actions.js
+see storeResult()
