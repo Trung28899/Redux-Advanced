@@ -9,7 +9,7 @@ will be applied whenever any action is dispatched
 
 3. Guide of how to use: 
 
-VER 1: Middleware
+VER 1: Middleware setting up
 -------------------------------------------------------------
-
+Code in 2nd commit 
 - See index.js to see how to setup Middleware
