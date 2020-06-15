@@ -56,7 +56,7 @@ see "Action Creators vs Reducer.png"
 VER 4: Getting state in redux and 
 using utility functions
 -------------------------------------------------------------
-Code in 7th commit 
+Code in 8th commit 
 
 - Getting state in redux: 
 Step 1: go to store/actions/result.js, see 
@@ -67,3 +67,8 @@ Step 1: See store/utility.js to understand how to set it
 up
 Step 2: See reducer/counter.js and reducer/result.js to 
 see how to use it
+
+REFERENCE DOCUMENTATION: 
+Middleware: https://redux.js.org/advanced/middleware/
+redux-thunk package: https://github.com/gaearon/redux-thunk
+Async Actions: https://redux.js.org/advanced/async-actions
