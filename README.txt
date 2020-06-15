@@ -51,4 +51,19 @@ Step 2: See how to handle async code in actions.js
 see storeResult()
 
 - Where to put the logic: Action Creators or Reducer
-see "Action Reducer vs Reducer.png"
+see "Action Creators vs Reducer.png"
+
+VER 4: Getting state in redux and 
+using utility functions
+-------------------------------------------------------------
+Code in 7th commit 
+
+- Getting state in redux: 
+Step 1: go to store/actions/result.js, see 
+under storeResult
+
+- using utility function: 
+Step 1: See store/utility.js to understand how to set it
+up
+Step 2: See reducer/counter.js and reducer/result.js to 
+see how to use it
