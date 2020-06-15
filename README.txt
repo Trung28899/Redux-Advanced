@@ -30,6 +30,7 @@ VER 1: Middleware and redux dev tool setting up
 Code in 3rd commit 
 - See index.js to see how to setup Middleware and redux dev tool 
 > see exactly how to set it up in index.js
+- see image middleware-redux-flow.png
 
 VER 2: Setup and use Action creators
 -------------------------------------------------------------
