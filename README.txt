@@ -48,7 +48,8 @@ comparison Action Creators vs Reducer
 Code in 6th commit 
 
 Step 1: install redux thunk, see reference above
-Step 2: See how to handle async code in actions.js
+Step 2: See how to import redux thunk in src/index.js
+Step 3: See how to handle async code in actions.js
 see storeResult()
 
 - Where to put the logic: Action Creators or Reducer
